@@ -1,0 +1,85 @@
+[
+    {
+        "packagename": "Camping",
+        "name":"Camping (Regular)",
+        "locations":[
+            "Gupteshwar",
+            "Duduma", 
+            "Deomali"
+        ],
+        "duration":"1Night",
+        "price":2299,
+        "members":4,
+        "img":"/images/Packages/pexels-sunil-14502630.jpg",
+        "amenitiesincluded":[
+            "Deluxe quality waterproof tents",
+            "Camping equipment",
+            "Bonfire equipment",
+            "Transportation from a desired arrival & departure point",
+            "Basic First Aid"
+        ],
+        "overview":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quae quas hic modi consequatur nostrum dolorem! Odio quas illo voluptas?",
+        "description":[
+            "Pickup From Pickup Point before Night",
+            "Drop to Departure Point After Sunrise"
+        ]
+        
+    },
+    {
+        "packagename": "Camping",
+        "name":"Camping (Premium)",
+        "locations":[
+            "Gupteshwar",
+            "Duduma", 
+            "Deomali"
+        ],
+        "duration":"1Night",
+        "price":3499,
+        "members":4,
+        "img":"/images/Packages/pexels-sunil-14502630.jpg",
+        "amenitiesincluded":[
+            "Deluxe quality waterproof double-layered tents",
+            "Camping equipment",
+            "Food Included",
+            "Music",
+            "Power backup",
+            "1 Ground staff",
+            "Bonfire equipment",
+            "Transportation from a desired arrival & departure point",
+            "Basic First Aid"
+        ],
+        "overview":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quae quas hic modi consequatur nostrum dolorem! Odio quas illo voluptas?",
+        "description":[
+            "Pickup From Pickup Point before Night",
+            "Drop to Departure Point After Sunrise"
+        ]
+        
+    },
+    {
+        "packagename": "Camping",
+        "name":"Camping (Couple's Special)",
+        "locations":[
+            "Pendajam "
+        ],
+        "duration":"1Night",
+        "price":4600,
+        "members":4,
+        "img":"/images/Packages/pexels-sunil-14502630.jpg",
+        "amenitiesincluded":[
+            "Double-layered tent with all required equipment.",
+            "Camping chairs",
+            "Required materials for Bonfire",
+            "Mineral water",
+            "Emergency backup lights",
+            "Morning Breakfast",
+            "Transportation from a desired arrival & departure point",
+            "Basic First Aid"
+        ],
+        "overview":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quae quas hic modi consequatur nostrum dolorem! Odio quas illo voluptas?",
+        "description":[
+            "Pickup From Pendajam before Sunset",
+            "Drop to Departure Point After Sunrise"
+        ]
+        
+    }    
+]

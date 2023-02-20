@@ -1,0 +1,205 @@
+.package-contact-container{
+    height: 100vh;
+    width: 100%;
+    z-index:100;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.package-contact-popup-body{
+    height: 80vh;
+    width: 80%;
+    overflow-y: auto;
+}
+.package-contact-popup-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;;
+}
+.contact-form .packagename,
+.contact-form .tripdate,
+.contact-form .members {
+    overflow-x: hidden;
+    position: relative !important;
+    -moz-border-radius: none !important;
+    -webkit-border-radius: none !important;
+    border-radius: none !important;
+  }
+  .contact-form .packagename .package-input:focus,
+.contact-form .packagename textarea:focus,
+.contact-form .tripdate input:focus,
+.contact-form .tripdate textarea:focus,
+.contact-form .members input:focus,
+.contact-form .members textarea:focus {
+  background: #f4f5f6 !important;
+}
+.package-input{
+    border: none !important;
+  outline: none !important;
+  resize: none !important;
+  width: 100% !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  color: #646464;
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 1.75em;
+  text-align: initial;
+}
+.contact-form .packagename label,
+.contact-form .tripdate label,
+.contact-form .members label {
+    color: #cbd0d3 !important;
+    left: 23px !important;
+    position: absolute !important;
+    top: 23px !important;
+    -moz-transition: all, 150ms !important;
+    -o-transition: all, 150ms !important;
+    -webkit-transition: all, 150ms !important;
+    transition: all, 150ms !important;
+  }
+  .contact-form .packagename.typing label,
+  .contact-form .tripdate.typing label,
+  .contact-form .members.typing label {
+    color: #3498db !important;;
+    top: 7px !important;
+  }
+  input[type="date"]::before{
+    content:"Expected Date - ";
+  }
+ 
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+  .contact-form .packagename,
+  .contact-form .tripdate,
+  .contact-form .members {
+    width: calc(50% - 1px) !important;
+  }
+  @media (max-width: 500px) {
+    .contact-form .packagename,
+    .contact-form .tripdate,
+    .contact-form .members {
+      width: 100% !important;
+    }
+  }
+  .contact-form .packagename .package-input,
+  .contact-form .tripdate input,
+  .contact-form .members input {
+    padding: 23px 0 8px 23px !important;
+  }
+
+  .contact-form .packagename,
+  .contact-form .members{
+    border-left: 1px #e6e6e6 solid !important;
+    float: right !important;
+  }
+  
+  @media (max-width: 500px) {
+    .contact-form .packagename,
+    .contact-form .tripdate,
+    .contact-form .members {
+      border-left: none !important;
+      border-top: 1px #e6e6e6 solid !important;
+      float: none !important;
+    }
+    .package-contact-popup-body{
+      width: 100%;
+    
+    }
+  }
+  .contact-form .tripdate {
+    float: left !important;
+  }
+  .contact-form .control {
+    background: #f4f5f6 !important;
+    overflow: hidden !important;
+    padding: 23px !important;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #cancel {
+    background: #d95847;
+    color: #fff !important;
+    border-color: #fff !important;
+    padding: 10px 50px;
+    border-radius: 5px;
+  }
+  #send {
+    background: #47cdd9;
+    color: #fff !important;
+    border-color: #fff !important;
+    padding: 10px 50px;
+    border-radius: 5px;
+  }
+  input::placeholder:hover,
+  textarea::placeholder:hover{
+    cursor: text !important;
+  }
+  input::placeholder,
+  textarea::placeholder{
+    color: #cbd0d3 !important;
+  left: 23px !important;
+  position: absolute !important;
+  top: 23px !important;
+  -moz-transition: all, 150ms !important;
+  -o-transition: all, 150ms !important;
+  -webkit-transition: all, 150ms !important;
+  transition: all, 150ms !important;
+  }
+  .error-message{
+    color:red;
+    display: none;
+  }
+  input:invalid ~ span,
+  textarea:invalid ~ span{
+    display: block;
+  }
+  .alert-message{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    background: white;
+    box-shadow:2px 3px 5px #999;
+
+  }
+  .alert-message-body{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alert-popup-message{
+    display: none;
+  }
+  .alert-popup-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .alert-message-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }

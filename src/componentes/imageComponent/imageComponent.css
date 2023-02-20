@@ -1,0 +1,25 @@
+.image-component-container{
+    height: 90vh;
+    width: 100%;
+    z-index:10000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-y: auto;
+}
+.image-component-popup-body{
+    height: 80vh;
+    width: 70%;
+    
+}
+.image-component-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.image-component-popup-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}

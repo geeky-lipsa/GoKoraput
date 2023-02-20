@@ -1,0 +1,7 @@
+export {default as Home} from './home/Home'
+export {default as PackageDetails} from './packageDetails/PackageDetails'
+export {default as Gallary} from './gallary/Gallary'
+export {default as About} from './about/About'
+export {default as Contact} from './contact/Contact'
+export {default as DestinationDetails} from './destinationDetails/DestinationDetails'
+export {default as Destination} from './destination/Destination'

@@ -1,0 +1,165 @@
+.extra-contact-container{
+    height: 90vh;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra-contact-popup-close{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+.extra-contact-popup-body{
+  width: 100%;
+}
+
+.extra-contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff !important;
+    height: 90vh;;
+    margin: 30px auto;
+    max-width: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: rgba(26, 26, 26, 0.1) 0 1px 3px 0;
+    -webkit-box-shadow: rgba(26, 26, 26, 0.1) 0 1px 3px 0;
+    box-shadow: rgba(26, 26, 26, 0.1) 0 1px 3px 0;
+}
+@media (max-width: 500px) {
+    .extra-contact-form {
+      margin: 0;
+      padding-top: 1em;
+      width: 100% !important;
+      max-width: 100% !important;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      -moz-box-shadow: rgba(26, 26, 26, 0.1) 0 0px 0px 0;
+      -webkit-box-shadow: rgba(26, 26, 26, 0.1) 0 0px 0px 0;
+      box-shadow: rgba(26, 26, 26, 0.1) 0 0px 0px 0;
+    }
+    .extra-contact-container{
+        position: relative;
+    }
+  }
+  
+  .extra-contact-form .email,
+  .extra-contact-form .name,
+  .extra-contact-form .phone {
+    overflow-x: hidden;
+    position: relative !important;
+    -moz-border-radius: none !important;
+    -webkit-border-radius: none !important;
+    border-radius: none !important;
+  }
+  
+  .extra-contact-form .email input:focus,
+  .extra-contact-form .email textarea:focus,
+  .extra-contact-form .name input:focus,
+  .extra-contact-form .name textarea:focus,
+  .extra-contact-form .phone input:focus,
+  .extra-contact-form .phone textarea:focus {
+    background: #f4f5f6 !important;
+  }
+  
+  .extra-contact-form .email label,
+  .extra-contact-form .name label,
+  .extra-contact-form .phone label {
+    color: #cbd0d3 !important;
+    left: 23px !important;
+    position: absolute !important;
+    top: 23px !important;
+    -moz-transition: all, 150ms !important;
+    -o-transition: all, 150ms !important;
+    -webkit-transition: all, 150ms !important;
+    transition: all, 150ms !important;
+  }
+  
+  .extra-contact-form .email.typing label,
+  .extra-contact-form .name.typing label,
+  .extra-contact-form .phone.typing label {
+    color: #3498db !important;
+    top: 7px !important;
+  }
+  
+  .extra-contact-form .email,
+  .extra-contact-form .name,
+  .extra-contact-form .phone {
+    width: calc(50% - 1px) !important;
+  }
+  
+  @media (max-width: 500px) {
+    .extra-contact-form .email,
+    .extra-contact-form .name,
+    .extra-contact-form .phone {
+      width: 100% !important;
+    }
+  }
+  
+  .extra-contact-form .email input,
+  .extra-contact-form .name input,
+  .extra-contact-form .phone input {
+    padding: 23px 0 8px 23px !important;
+  }
+  
+  .extra-contact-form .email {
+    border-left: 1px #e6e6e6 solid !important;
+    float: right !important;
+  }
+  
+  @media (max-width: 500px) {
+    .extra-contact-form .email {
+      border-left: none !important;
+      border-top: 1px #e6e6e6 solid !important;
+      float: none !important;
+    }
+    .extra-contact-form .phone {
+      border-top: 1px #e6e6e6 solid !important;
+    }
+  }
+   
+  .extra-contact-form .name,
+  .extra-contact-form .phone {
+    float: left !important;
+  }
+  
+  .extra-contact-form .submit {
+    background: #f4f5f6 !important;
+    display: block !important;
+    overflow: hidden !important;
+    padding: 23px !important;
+    margin-bottom: 2em;
+  }
+  
+  .extra-contact-form .submit .user-message {
+    float: left !important;
+    padding-top: 22px !important;
+  }
+  
+  @media (max-width: 500px) {
+    .extra-contact-form .submit .user-message {
+      float: none !important;
+      padding: 0 0 10px !important;
+    }
+  }
+.cd-extra-popup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.extra-control{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}

@@ -1,0 +1,20 @@
+.extra-feature-card3-feature-card{
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:767px){
+    .extra-feature-card3-feature-card{
+        padding: 0px;
+    }
+
+}
+.extra-feature-card3-text:hover{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+    
