@@ -49,7 +49,7 @@ function ExtraServicesContact ({closeContact}) {
         </div>
       </div>
         <span className="extra-contact-popup-close popup-Close" onClick={()=>closeContact(false)}><RiCloseFill /></span>
-        <div className='extra-contact-popup-body'>
+        {/* <div className='extra-contact-popup-body'> */}
         <form name="contactform" id="contactform" className="extra-contact-form">
     <div className="cd-extra-popup-container">
 
@@ -72,7 +72,7 @@ function ExtraServicesContact ({closeContact}) {
       </div>
     </div>
   </form>
-        </div>
+        {/* </div> */}
     </div>
     </>
   )

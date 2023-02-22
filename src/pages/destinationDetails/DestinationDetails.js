@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Destinations, Footer, Header, ImageComponent } from '../../componentes'
+import { Destinations,ImageComponent } from '../../componentes'
 import './destinationDetails.css'
 import destinations from '../../data/Destinations.json'
 import {useParams } from "react-router-dom";
@@ -41,9 +41,8 @@ const DestinationDetails = () => {
     <meta name="description" content={destination[0].description}/>
     <link rel="canonical" href={`/Destination/${destination[0].alt}`} />
     </Helmet>
-    <div className={model ? "destination-details-container-open-popup":"destination-details-container" }>
+    <div className="destination-details-container" >
       {model && <ImageComponent closeContact={setModel} imgSrc={tempimgSrc} />}
-        <Header />
     <div className="destination-details-gallery">
   
        <div className="destination-details-container1">
@@ -78,7 +77,6 @@ const DestinationDetails = () => {
          </div>
        </div>
      </div>
-     <Footer />
    </div>
    </>
   )

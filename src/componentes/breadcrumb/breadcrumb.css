@@ -1,0 +1,28 @@
+.breadcrumb{
+    margin: 5px auto 5px 20px;
+    text-align: left;
+}
+.breadcrumb > *{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.crumb::after{
+    content: '\00BB';
+    margin-left: 10px;
+    color: #000;
+}
+.crumb:last-child::after{
+    display:none;
+}
+.crumb:last-child > a{
+    color:red;
+}
+.crumb > a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: petite-caps;
+}
+

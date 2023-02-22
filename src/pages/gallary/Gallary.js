@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { Footer, Header, ImageComponent } from '../../componentes'
+import { ImageComponent } from '../../componentes'
 import data from '../../data/Gallary.json'
 import './gallary.css'
 const Gallary = (props) => {
@@ -26,14 +26,12 @@ const Gallary = (props) => {
     <meta name="description" content="Immerse yourself in the beauty of different cultures, landscapes, & adventures. Get inspired for your next trip with our magnificent photos."/>
     <link rel="canonical" href="/Gallary" />
     </Helmet>
-    <div className={model ? "destination-details-container-open-popup":'gallary-container'}>
+    <div className='gallary-container'>
     {model && <ImageComponent closeContact={setModel} imgSrc={tempimgSrc} />}
-      <Header/>
       <h1 className='Heading'>Our Magnificient Gallary</h1>
       <br />
       <div className='gallary-wrapper'>
       {getGallaryImage()}</div>
-      <Footer/>
     </div>
     </>
   )

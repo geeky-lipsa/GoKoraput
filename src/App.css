@@ -39,9 +39,9 @@
 
 .scroll-to-top_float{
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
+  width: 48px;
+  height: 48px;
+  bottom: 20px;
   right: 110px;
   background-color: #FFF;
   color: #000;
@@ -53,9 +53,9 @@
 }
 .whatsapp-icon {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
+  width: 48px;
+  height: 48px;
+  bottom: 20px;
   right: 40px;
   background-color: #25d366;
   color: #FFF;
@@ -66,7 +66,7 @@
   z-index: 100;
 }
 .scroll-to-top-icon{
-  margin-top: 16px;
+  margin-top: 10px;
 }
 /* for mobile */
 @media screen and (max-width: 767px) {
@@ -89,5 +89,20 @@
       right: 55px;
       font-size: 22px;
   }
+}
+.social-icons-container1{
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 5px;
+}
+.social-icon{
+  fill: var(--dl-color-gray-black);
+  width: 24px;
+  height: 24px;
 }
 

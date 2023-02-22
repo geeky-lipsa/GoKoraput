@@ -6,17 +6,12 @@ const Footer = () => {
   return (
     <div className="landing-page-footer">
         <div className="landing-page-menu">
+          <div>
           <img src={logo} alt="gokoraput" style={{width: "110px"}} loading='lazy' title="Go-koraput"  width="100%" height="100%"/>
-          <div className="landing-page-links-container2">
+          </div>
+          {/* <div className="landing-page-links-container2"> */}
             <div className="landing-page-container6">
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="landing-page-link05"
-              >
-                Tour packages
-              </a>
+              <Link to="/Packages" className="landing-page-link05">Tour packages</Link>
               <Link to="/Contact" className="landing-page-link06"> Personalized offers </Link>
               <Link to="/Contact" className="landing-page-link07"> Special deals </Link>
               <Link to="/Destinations" className="landing-page-link08"> Top Destinations
@@ -47,7 +42,7 @@ const Footer = () => {
               </a>
               <Link to="/Contact" className="landing-page-link12">Contact</Link>
             </div>
-          </div>
+          {/* </div> */}
           <div className="landing-page-follow-container1">
             <span className="landing-page-text28">
               Follow us on
@@ -100,6 +95,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className='footer-copyright'>2023 GoKoraput.com</div>
       </div>
   )
 }

@@ -1,11 +1,17 @@
 .image-component-container{
-    height: 90vh;
-    width: 100%;
-    z-index:10000;
-    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    outline: 0;
     align-items: center;
+    justify-content: center;
     display: flex;
-    overflow-y: auto;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .image-component-popup-body{
     height: 80vh;

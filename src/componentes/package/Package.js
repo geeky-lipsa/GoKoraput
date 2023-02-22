@@ -2,10 +2,10 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './packages.css'
+import './package.css'
 import { Link } from 'react-router-dom'
 
-const Packages = (props) => {
+const Package = (props) => {
   return (
     <div className={`blog-post-card3-blog-post-card ${props.rootClassName} `}>
       <img
@@ -27,7 +27,7 @@ const Packages = (props) => {
   )
 }
 
-Packages.propTypes = {
+Package.propTypes = {
   image_src: PropTypes.string,
   rootClassName: PropTypes.string,
   image_alt: PropTypes.string,
@@ -35,4 +35,4 @@ Packages.propTypes = {
   description: PropTypes.string,
 }
 
-export default Packages
+export default Package

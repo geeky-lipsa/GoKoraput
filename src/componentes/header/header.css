@@ -1,8 +1,8 @@
 .landing-page-navbar {
     width: 100%;
     display: flex;
-    padding-top: var(--dl-space-space-doubleunit);
-    padding-bottom: var(--dl-space-space-doubleunit);
+    padding-top: var(--dl-space-space-singleunit);
+    padding-bottom: var(--dl-space-space-singleunit);
     /* max-width: 1000px; */
     align-items: center;
     flex-direction: row;

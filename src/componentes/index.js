@@ -1,5 +1,5 @@
 export {default as Destinations} from './destinations/Destinations'
-export {default as Packages} from './packages/Packages'
+export {default as Package} from './package/Package'
 export {default as Services} from './services/Services'
 export {default as SolidButton} from './solidButton/SolidButton'
 export {default as Testimonials} from './testimonials/Testimonials'
@@ -12,3 +12,4 @@ export {default as TestimonialComponent} from './testimonialComponent/Testimonia
 export {default as ScrollToTop} from './scrollToTop/ScrollToTop'
 export {default as ExtraServicesContact} from './extraServicesContact/ExtraServicesContact'
 export {default as ExtraServices} from './extraServices/ExtraServices'
+export {default as Breadcrumb} from './breadcrumb/Breadcrumb'

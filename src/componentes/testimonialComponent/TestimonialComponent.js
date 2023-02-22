@@ -6,7 +6,8 @@ import axios from 'axios'
 
 function TestimonialComponent ({closeContact}) {
     const [formstate, setFormstate] = useState({});
-    const [files, setFiles] = useState('')
+    const [files, setFiles] = useState('');
+    const [popup,setPopup]=useState(false);
     const uploadedImage = React.useRef(null);
     const changeHandler = (event) =>{
         setFormstate({...formstate, [event.target.name]:event.target.value});
@@ -29,6 +30,16 @@ function TestimonialComponent ({closeContact}) {
     };
       const submitHandler = async (event) => {
         event.preventDefault();
+        if (Object.entries(formstate).length < 2 ){
+          setPopup(true);
+        }
+        else if(Object.entries(formstate.name).length===0 || Object.entries(formstate.message).length===0 ){
+          setPopup(true);
+        }
+        else if(files===''){
+          setPopup(true);
+        }
+        else{
         const formdata = new FormData();
         formdata.append('file', files);
         try{
@@ -45,7 +56,6 @@ function TestimonialComponent ({closeContact}) {
                 });
                 console.log(response);
                 if (response.status === 200){
-                    console.log("inside");
                     setFiles('');
                     setFormstate({});
                     uploadedImage.current=null;
@@ -57,12 +67,19 @@ function TestimonialComponent ({closeContact}) {
                 console.log(err.response.data.msg);
             }
         }
-        
+      }
 
         };
         
   return (
+    <>
     <div className="testimonial-component-container">
+    <div className={popup ?'alert-message':'alert-popup-message'}>
+      <span className="alert-message-close popup-Close" onClick={()=>setPopup(false)}><RiCloseFill /></span>
+        <div className='alert-message-body Content'>
+          Please Fill the Form Before Submitting
+        </div>
+      </div>
         <span className="testimonial-component-popup-close" onClick={()=>closeContact(false)}><RiCloseFill /></span>
         <div className='testimonial-component-popup-description-body'>
           <div className='testimonial-component-popup-body'>
@@ -77,7 +94,7 @@ function TestimonialComponent ({closeContact}) {
         </div>
         <div className='testimonial-componennet-input-container'>
             <form name="contactform" id="contactform" className="testimonial-form">
-    <div className="cd-popup-container">
+    <div className="testimonial-component-popup-container">
 
       <div className="name">
         <input type="text" id="name" name="name" placeholder='Name'  value={formstate.name || ""} onChange={changeHandler} />
@@ -94,7 +111,7 @@ function TestimonialComponent ({closeContact}) {
         </div>
         
       </div>
-      <div className="message">
+      <div className="message width-class">
         <textarea name="message" id="message" placeholder='Message'value={formstate.message || ""} 
                                 onChange={changeHandler}></textarea>
         <span className='error-message'>Query should not be empty</span>
@@ -104,6 +121,7 @@ function TestimonialComponent ({closeContact}) {
       </div>
         </div>
     </div>
+    </>
   )
 }
 

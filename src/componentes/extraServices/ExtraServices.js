@@ -14,7 +14,7 @@ const ExtraServices = (props) => {
      {modal && (
       <div className="extra-contact-container">
         <span className="extra-contact-popup-close popup-Close" onClick={()=>showModal(false)}><RiCloseFill /></span>
-        <div className='extra-contact-popup-body'>
+        <div className='extra-contact-popup-body alert-message-body Content'>
           This service will be Available shortly.
         </div>
     </div>
@@ -23,12 +23,14 @@ const ExtraServices = (props) => {
     
       <img src={props.img_src} alt={props.img_alt} className="feature-card3-icon" loading='lazy' title={props.img_alt}  width="100%" height="100%"
         />
+        <div className='link-border'>
       {props.title === 'Cab Services' &&
-      <h2 className="extra-feature-card3-text Subheading" onClick={()=>{showPopup(true)}}>{props.title}</h2>
+      <h2 className="extra-feature-card3-text Subheading " onClick={()=>{showPopup(true)}}>{props.title}</h2>
       }
       {props.title !== 'Cab Services' &&
       <h2 className="extra-feature-card3-text Subheading" onClick={()=>{showModal(true)}}>{props.title}</h2>
       }
+      </div>
     </div></>
   )
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './contact.css'
-import { Footer, Header } from '../../componentes'
 import * as emailjs from "emailjs-com";
 import { Helmet } from 'react-helmet-async';
 import { ToastContainer, toast } from 'react-toastify';
@@ -61,7 +60,6 @@ pauseOnFocusLoss
 draggable
 pauseOnHover
 theme="colored"/>
-      <Header />
       <h1 className='Heading'>Feel free to get in touch.</h1>
       
   <form name="contactform" id="contactform" className="contact-form">
@@ -94,7 +92,6 @@ theme="colored"/>
       </div>
     </div>
   </form>
-  <Footer />
 </div>
 </>
   )

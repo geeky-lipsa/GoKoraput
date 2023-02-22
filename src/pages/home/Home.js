@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Destinations,ExtraServices, Footer, Header, Packages, Services, SolidButton, TestimonialComponent, Testimonials } from '../../componentes'
+import { Destinations,ExtraServices, Package, Services, SolidButton, TestimonialComponent, Testimonials } from '../../componentes'
 import destinations from '../../data/Destinations.json'
 import packages from '../../data/Packages.json'
 import testimonials from '../../data/Testimonials.json'
@@ -58,13 +58,13 @@ function getPackages(){
     
     if(index<3){
       packageArray.push(
-  <Packages
+  <Package
   image_src={pckgs.img}
   image_alt={pckgs.name}
   packageName={pckgs.name}
-  description={pckgs.overview}
+  description={pckgs.short_overview}
       key={index}
-    ></Packages>
+    ></Package>
     )}})
   return packageArray
 }
@@ -75,13 +75,12 @@ function getPackages(){
     <meta name="description" content="Koraput. A city of scenic landscapes, cultural heritage, & thrilling adventures. Come escape city life and experience the beauty of Koraput."/>
     <link rel="canonical" href="/" />
     </Helmet>
-    <div className={model? "destination-details-container-open-popup":"landing-page-container" }>
+    <div className="landing-page-container" >
       {model && <TestimonialComponent closeContact={setModel}/>}
       <div className="landing-page-top-container">
-        <Header />
         <div className="landing-page-hero">
           <div className="landing-page-content-container">
-            <h1 className="Heading landing-page-text09">Uncover The Hidden Treasures Of Koraput</h1>
+            <h1 className="Heading landing-page-text09">Discover The Hidden Treasures Of Koraput</h1>
             <h2 className="Subheading landing-page-subheading">
             Your Next Adventure Awaits
             </h2>
@@ -98,6 +97,7 @@ function getPackages(){
       </div>
       <div className="landing-page-blog">
         <h2 className="landing-page-text16 Heading">Recommended Packages</h2>
+        <Link to="/Packages"><span className=" Content landing-page-text15">View More</span></Link>
         <div className="landing-page-container1">
          {getPackages()}
          </div>
@@ -197,7 +197,7 @@ function getPackages(){
         </div>
         
       </div>
-      <Footer />
+     
     </div>
     </>
   )

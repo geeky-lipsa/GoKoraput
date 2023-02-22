@@ -1,5 +1,4 @@
 import React from 'react'
-import { Footer, Header } from '../../componentes'
 import './about.css'
 import why from '../../images/Pages/undraw_in_thought_re_qyxl.svg'
 import who from '../../images/Pages/undraw_questions_re_1fy7.svg'
@@ -14,7 +13,6 @@ const About = () => {
     <link rel="canonical" href="/About" />
     </Helmet>
     <div className='about-container'>
-  <Header />
     <div className='about-wrapper'>
         <h1 className='Heading'>Know About Us in Detail</h1>
         <div className='about-who'>
@@ -57,7 +55,6 @@ const About = () => {
             <div ><img className='about-image' src={vision} alt="our vision"  loading='lazy' title='our vision'  width="100%" height="100%"/></div>
         </div>
     </div>
-    <Footer/>
 </div>
 </>
   )

@@ -3,9 +3,11 @@ import { Link, NavLink } from 'react-router-dom'
 import SolidButton from '../solidButton/SolidButton'
 import logo from '../../images/GOKORAPUT_namelogo-removebg-preview.png'
 import './header.css'
+import Breadcrumb from '../breadcrumb/Breadcrumb'
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
+    <>
     <nav data-role="Header" className="landing-page-navbar">
     <Link to='/'> <img src={logo} alt="goKoraput" style={{    width: "110px"}} title='Go-Koraput' width="100%" height="100%"/></Link>
     <div className="landing-page-right-side">
@@ -40,13 +42,13 @@ const Header = () => {
         </div>
         <div className="landing-page-right-side1">
           <div className="landing-page-links-container1">
-            <span className="landing-page-text04"><NavLink to="/" className='header-links' exact="true">Home</NavLink></span>
-            <span className="landing-page-text05"><NavLink to="/About" className='header-links'>About</NavLink></span>
-            <span className="landing-page-text06"><NavLink to="/Destination" className='header-links'>Destinations</NavLink></span>
-            <span className="landing-page-text06"><NavLink to="/Gallary" className='header-links'>Gallary</NavLink></span>
-            <span className="landing-page-text06"><NavLink to="/Contact" className='header-links'>Contact</NavLink></span>
+            <span className="landing-page-text04"><NavLink to="/" className='header-links' exact="true" onClick={()=>setOpenMenu(false)}>Home</NavLink></span>
+            <span className="landing-page-text05"><NavLink to="/About" className='header-links' onClick={()=>setOpenMenu(false)}>About</NavLink></span>
+            <span className="landing-page-text06"><NavLink to="/Destination" className='header-links' onClick={()=>setOpenMenu(false)}>Destinations</NavLink></span>
+            <span className="landing-page-text06"><NavLink to="/Gallary" className='header-links' onClick={()=>setOpenMenu(false)}>Gallary</NavLink></span>
+            <span className="landing-page-text06"><NavLink to="/Contact" className='header-links' onClick={()=>setOpenMenu(false)}>Contact</NavLink></span>
           </div>
-            <Link to="/Destination"><SolidButton button="Explore places"></SolidButton></Link>
+            <Link to="/Destination"><SolidButton button="Explore places" handler={()=>setOpenMenu(false)}></SolidButton></Link>
         </div>
       </div>
       <div className="landing-page-follow-container">
@@ -102,6 +104,8 @@ const Header = () => {
       </div>
     </div>
   </nav>
+  <Breadcrumb />
+  </>
   )
 }
 

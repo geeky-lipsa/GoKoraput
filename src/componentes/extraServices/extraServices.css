@@ -11,10 +11,43 @@
     }
 
 }
-.extra-feature-card3-text:hover{
-    background-color: red;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
+.extra-feature-card3-text{
+    z-index: 1;
+    margin: 0px;
+    padding: 10px 10px;
 }
-    
+.link-border{
+   position: relative;
+   display: flex   ;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   overflow: hidden;
+   border-radius: 20px; 
+}
+.link-border::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background-color: #000;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    animation: animate 4s linear infinite;
+}
+.link-border::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+} 
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+

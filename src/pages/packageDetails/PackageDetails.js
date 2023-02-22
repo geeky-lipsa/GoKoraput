@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import {BsCheck2All}  from "react-icons/bs";
-import {  Footer, Header, ImageComponent, PackageContact, SolidButton } from '../../componentes'
+import { ImageComponent, PackageContact, SolidButton } from '../../componentes'
 import './packageDetails.css'
 import packages from '../../data/Packages.json'
 import {useParams } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 const PackageDetails = () => {
   const {name}= useParams ();
@@ -35,11 +36,16 @@ function getAmenities(){
             return ItenaryDetailsArray
         }
   return (
-    <div className={model|| contact  ? "destination-details-container-open-popup":"description-container" }>
+    <>
+    <Helmet>
+    <title>{packagedetail[0].name} | Go Koraput</title>
+    <meta name="description" content={packagedetail[0].short_overview}/>
+    <link rel="canonical" href={`/Packages/${packagedetail[0].name}`} />
+    </Helmet>
+    <div className="description-container" >
     {model && <ImageComponent closeContact={setModel} imgSrc={tempimgSrc} />}
     {contact && <PackageContact closeContact={setContact} packgname={packagedetail[0].name}/>}
       <div className="description-hero" >
-      <Header />
         <img onClick={() => openImage(packagedetail[0].img)}
           alt={packagedetail[0].name}
           src={packagedetail[0].img}
@@ -74,8 +80,8 @@ function getAmenities(){
       <div className="description-container6">
         <SolidButton className='button' handler={()=>{setContact(true)}} button="Enquire Now" ></SolidButton>
       </div>
-      <Footer />
     </div>
+    </>
   )
 }
 

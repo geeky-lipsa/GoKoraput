@@ -12,19 +12,19 @@
         "description":"Experience peace & adventure while trekking to the Deomali peak, or explore the unique tribal lifestyle. Come discover this unspoiled destination.",
         "overview":"With an elevation of 1672 meters from sea level, Deomali stands as the Highest peak point of Odisha & the tallest in the eastern ghat region/ Surrounded by deep green forest and rich minerals. One of the best places in Odisha to watch Sunrise & Sunset from the top of the mountain. It has a road of 4-5kms on top of it which has multiple viewpoints to stop and watch the serene beauty. A trek of 1lhr will take you to the Utmost top of it and the experience can only be felt rather than explained in words , Distance from Semiliguda town-41km,Distance from Koraput town-65km"
     },
- {
-        "destinationName":"Gupteshwar",
-        "alt":"Gupteshwar Shiva Caves & Temple",
+    {
+        "destinationName":"Punjisil",
+        "alt":"Punjisil WaterFalls",
         "img":[
-            "/images/Gallary/pexels-sunil-14502630.jpg",
-            "/images/Gallary/pexels-sunil-14502630.jpg",
-            "/images/Gallary/pexels-sunil-14502630.jpg"
+            "/images/Destinations/punjisil.jpg",
+            "/images/Destinations/punjisil 1.jpg",
+            "/images/Destinations/punjisil 2.jpg"
         ],
-        "type":"Scenic Spots",
-        "tag":"scenicspots",
-        "description":"Explore the ancient Shiva temple & the stunning caves surrounded by lush greenery. Come rejuvenate your mind, body & soul in this tranquil destination.",
-        "overview":"It is popularly known as 'Hidden God'.One has to get into the cave to see the huge Lingam. It is believed that Lord Rama passed through this region on his way to Panchabati, in Dandaka-Aranya. Hidden inside a deep forest & many other caves around it are perfect for adventure lovers and shiva devotees. Apart from the main cave, there are 3-4 caves nearby which are must-visit places Take the help of a professional guide or localities to know more about the caves. It has a  hidden place called 'Sangam Point'. It will take  30-45mins to reach there and a guide a recommended to pass through the jungles,Distance from Semiliguda town- 99km,Distance from Koraput town-117km"
-    },
+        "type":"WaterFalls",
+        "tag":"waterfalls",
+        "description":"Immerse yourself in the serenity of nature & experience the thrill of adventure. Come discover Punjisil.",
+        "overview":"Situated in Laxmipur block, it is one the most famous picnicked place in koraput. Also being the safest waterfall it's known as 'The Sliding waterfall' due to its structure and covered by dense forest. From September to March it gets filled almost every day with many tourists who come here for a jungle picnic,Distance from semiliguda town-45km,Distance from koraput town-25km"
+    }, 
   {
         "destinationName":"Balda",
         "alt":"Balda Cave",
@@ -116,19 +116,19 @@
         "description":"Take a refreshing dip, go for a scenic hike, or simply relax in the peaceful surroundings. Come discover the natural beauty of Raniduduma.",
         "overview":"Situated in Nandapur block, Raniduduma waterfall is one of the most visited places in Koraput District, which literally means queen fall. It's an 8-stepped waterfall and flows through the crafted mountains surrounded by greenery. It has direct access to the waterfall and you can enjoy the bath with natural streams,Distance from  Semiliguda town-24km,Distance from Koraput town-42km"
     }, 
-{
-        "destinationName":"Punjisil",
-        "alt":"Punjisil WaterFalls",
+    {
+        "destinationName":"Gupteshwar",
+        "alt":"Gupteshwar Shiva Caves & Temple",
         "img":[
-            "/images/Destinations/punjisil.jpg",
-            "/images/Destinations/punjisil 1.jpg",
-            "/images/Destinations/punjisil 2.jpg"
+            "/images/Gallary/pexels-sunil-14502630.jpg",
+            "/images/Gallary/pexels-sunil-14502630.jpg",
+            "/images/Gallary/pexels-sunil-14502630.jpg"
         ],
-        "type":"WaterFalls",
-        "tag":"waterfalls",
-        "description":"Immerse yourself in the serenity of nature & experience the thrill of adventure. Come discover Punjisil.",
-        "overview":"Situated in Laxmipur block, it is one the most famous picnicked place in koraput. Also being the safest waterfall it's known as 'The Sliding waterfall' due to its structure and covered by dense forest. From September to March it gets filled almost every day with many tourists who come here for a jungle picnic,Distance from semiliguda town-45km,Distance from koraput town-25km"
-    }, 
+        "type":"Scenic Spots",
+        "tag":"scenicspots",
+        "description":"Explore the ancient Shiva temple & the stunning caves surrounded by lush greenery. Come rejuvenate your mind, body & soul in this tranquil destination.",
+        "overview":"It is popularly known as 'Hidden God'.One has to get into the cave to see the huge Lingam. It is believed that Lord Rama passed through this region on his way to Panchabati, in Dandaka-Aranya. Hidden inside a deep forest & many other caves around it are perfect for adventure lovers and shiva devotees. Apart from the main cave, there are 3-4 caves nearby which are must-visit places Take the help of a professional guide or localities to know more about the caves. It has a  hidden place called 'Sangam Point'. It will take  30-45mins to reach there and a guide a recommended to pass through the jungles,Distance from Semiliguda town- 99km,Distance from Koraput town-117km"
+    },
 {
         "destinationName":"Duduma",
         "alt":"Duduma WaterFalls",

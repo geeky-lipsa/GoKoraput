@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async';
-import { Destinations, Footer, Header} from '../../componentes';
+import { Destinations} from '../../componentes';
 import destinations from '../../data/Destinations.json'
 import './destination.css'
 const Destination = () => {
@@ -30,7 +30,6 @@ const Destination = () => {
     <link rel="canonical" href="/Destinations" />
     </Helmet>
     <div className="destination-details-container" >
-        <Header />
         <h1 className='Heading'>Browse through Top Destinations</h1>
         <div className="landing-page-main">
          <h2 className='Subheading destination-category-heading'>Scenic Spots</h2>
@@ -50,7 +49,6 @@ const Destination = () => {
          {getCategoryDestinations("NearBy")}
          </div>
        </div>
-       <Footer />
         </div>
         </>
   )
