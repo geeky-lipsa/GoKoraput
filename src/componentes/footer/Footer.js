@@ -80,7 +80,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/Gokoraput"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="landing-page-link15"
