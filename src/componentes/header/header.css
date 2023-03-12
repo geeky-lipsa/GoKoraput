@@ -9,17 +9,17 @@
     justify-content: space-evenly;
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: rgb(204, 201, 201);
     z-index: 100;
 }
   
   .header-links{
     text-decoration: none;
     font-variant: small-caps;
-    font-weight: 900;
+    font-weight: 1000;
   }
   .header-links-active{
-color: red;
+color: rgb(236, 24, 24);
   }
   .landing-page-right-side {
     display: flex;
@@ -70,7 +70,7 @@ color: red;
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: aqua;
   }
   .landing-page-nav {
     flex: 0 0 auto;

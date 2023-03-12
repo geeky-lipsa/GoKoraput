@@ -14,10 +14,10 @@ const About = () => {
     </Helmet>
     <div className='about-container'>
     <div className='about-wrapper'>
-        <h1 className='Heading'>Know About Us in Detail</h1>
+        <h1 className='Heading'>Know About Us in Detail:</h1>
         <div className='about-who'>
             <div className='about-text'>
-                <h2 className='about-header Heading'>How it works!!!</h2>
+                <h3 className='about-header Heading'>How it works!!!</h3>
                 <div className='Content'>
                 <p>We as a service provider will give you End-to End solution of your trip where you have to only reach Koraput with your bags and rest we will organize all. Such as choosing the destinations to visit, stay location,transportation for exploring the sights.Last but not least we will pick you up fromthe Airport/ Railway station/ Bus-stand if anybody wants to & drop you too at the same.</p>
 <p className='Subheading'><strong>What we solve :-</strong></p>

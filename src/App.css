@@ -43,8 +43,8 @@
   height: 48px;
   bottom: 20px;
   right: 110px;
-  background-color: #FFF;
-  color: #000;
+  background-color: white;
+  color: #b01a1a;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -101,7 +101,7 @@
   left: 5px;
 }
 .social-icon{
-  fill: var(--dl-color-gray-black);
+  fill: var(--dl-color-gray-blue);
   width: 24px;
   height: 24px;
 }
